@@ -50,7 +50,7 @@ app.put('/stress/:elemento/tempostress/:tempoStress/intervalo/:intervalo/ciclos/
     const tempoFolga = req.params.tempoFolga * 1000;
     const ciclos = req.params.ciclos;
     new NodeHog(elemento, tempoStress, tempoFolga, ciclos).start();
-    res.send("OK");
+    res.send("OK!");
 });
 
 app.use('/api/produto', product);
